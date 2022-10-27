@@ -632,6 +632,12 @@ img {
     max-width: 100%;
     width: 250px;
   }
+  .es-mucoMini .es-about__imgText, #es-mucoMini .es-about__imgText {
+    max-width: 250px;
+  }
+  .es-mucoMini .es-about__imgText img, #es-mucoMini .es-about__imgText img {
+    max-width: 100%;
+  }
   .es-mucoMini .es-about__imgProduct img, #es-mucoMini .es-about__imgProduct img {
     align-self: center;
     max-width: 300px;
@@ -647,5 +653,10 @@ img {
     margin-left: 0;
     font-size: 18px;
     padding: 10px 30px;
+  }
+  .es-mucoMini .es-cross__badge, #es-mucoMini .es-cross__badge {
+    width: 100px;
+    right: -20px;
+    top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
