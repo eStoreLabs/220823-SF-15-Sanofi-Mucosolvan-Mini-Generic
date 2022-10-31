@@ -19,8 +19,8 @@ $secondary-color: #e4022e;
         opacity: 0;
 
     }
-    20%{
-        opacity: 0;
+    30%{
+        opacity: 1;
     }
     50%{
         opacity: 1;
@@ -52,7 +52,24 @@ $secondary-color: #e4022e;
         transform: scale(1);
       }
     }
+    @keyframes es-pulse3 {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgb(218, 211, 210);
 
+          
+          }
+          70% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 10px rgba(255, 26, 67, 0);
+           
+          }
+          to {
+            transform: scale(1);
+            box-shadow: 0 0 0 rgba(255, 206, 67, 0);
+            
+          }
+        }
     @keyframes shake {
         0% { transform: rotate(0deg); }
         25% { transform: rotate(5deg); }
@@ -240,7 +257,8 @@ $secondary-color: #e4022e;
         .es-about{
             &__logo{
                 margin: 30px auto;
-                padding: 30px;
+                padding: 0px;
+                margin-bottom: 0;
                 
             }
             &__iconsCtn{
@@ -248,6 +266,7 @@ $secondary-color: #e4022e;
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
+                margin-top: -10px;
             }
             &__iconsSingle{
                 min-width: 200px;
@@ -261,7 +280,7 @@ $secondary-color: #e4022e;
                     text-align: center;
                     text-transform: uppercase;
                     line-height: 1.2;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 900;
                     font-family: $title;
                     
@@ -451,6 +470,9 @@ $secondary-color: #e4022e;
             &__capacity{
                 margin: 0;
                 font-size: 16px;
+                &--200{
+                    font-size: 20px;
+                }
             }
             &__link{
                 display: inline-block;

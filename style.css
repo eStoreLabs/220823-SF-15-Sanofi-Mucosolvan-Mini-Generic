@@ -10,8 +10,8 @@
   0% {
     opacity: 0;
   }
-  20% {
-    opacity: 0;
+  30% {
+    opacity: 1;
   }
   50% {
     opacity: 1;
@@ -24,8 +24,8 @@
   0% {
     opacity: 0;
   }
-  20% {
-    opacity: 0;
+  30% {
+    opacity: 1;
   }
   50% {
     opacity: 1;
@@ -74,6 +74,34 @@
   }
   to {
     transform: scale(1);
+  }
+}
+@-webkit-keyframes es-pulse3 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(218, 211, 210);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(255, 26, 67, 0);
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 206, 67, 0);
+  }
+}
+@keyframes es-pulse3 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(218, 211, 210);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(255, 26, 67, 0);
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 206, 67, 0);
   }
 }
 @-webkit-keyframes shake {
@@ -315,13 +343,15 @@ img {
 }
 .es-mucoMini .es-about__logo, #es-mucoMini .es-about__logo {
   margin: 30px auto;
-  padding: 30px;
+  padding: 0px;
+  margin-bottom: 0;
 }
 .es-mucoMini .es-about__iconsCtn, #es-mucoMini .es-about__iconsCtn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: -10px;
 }
 .es-mucoMini .es-about__iconsSingle, #es-mucoMini .es-about__iconsSingle {
   min-width: 200px;
@@ -336,7 +366,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   line-height: 1.2;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 900;
   font-family: "MuseoSans";
 }
@@ -518,6 +548,9 @@ img {
 .es-mucoMini .es-cross__capacity, #es-mucoMini .es-cross__capacity {
   margin: 0;
   font-size: 16px;
+}
+.es-mucoMini .es-cross__capacity--200, #es-mucoMini .es-cross__capacity--200 {
+  font-size: 20px;
 }
 .es-mucoMini .es-cross__link, #es-mucoMini .es-cross__link {
   display: inline-block;
