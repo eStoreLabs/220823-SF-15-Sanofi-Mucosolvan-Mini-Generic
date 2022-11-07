@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "MuseoSans";
-  src: url("./fonts/MuseoSans_700.otf") format("opentype");
+  src: url("./fonts/MuseoSans-900.otf") format("opentype");
 }
 @-webkit-keyframes toggle {
   0% {
@@ -278,6 +278,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 1000px;
 }
 .es-mucoMini .es-intro__uppperContent, #es-mucoMini .es-intro__uppperContent {
   display: flex;
@@ -295,23 +296,22 @@ img {
 }
 .es-mucoMini .es-intro__text, #es-mucoMini .es-intro__text {
   z-index: 10;
+  margin-top: 50px;
 }
 .es-mucoMini .es-intro__text--red, #es-mucoMini .es-intro__text--red {
-  background-color: #e4022e;
   text-transform: uppercase;
   padding: 5px;
   transform: rotate(-3deg);
   border-radius: 5px;
   font-weight: 900;
+  font-family: "MuseoSans";
+  font-size: 35px;
+  text-shadow: -1px 0 #00418d, 0 1px #00418d, 1px 0 #00418d, 0 -1px #00418d;
 }
 .es-mucoMini .es-intro__textImg, #es-mucoMini .es-intro__textImg {
   z-index: 10;
-  max-width: 400px;
-  background-color: #004999;
-  border-radius: 5px;
-  padding: 10px;
-  transform: rotate(2deg);
-  margin-top: -8px;
+  max-width: 250px;
+  margin-top: -28px;
 }
 .es-mucoMini .es-intro__textContent, #es-mucoMini .es-intro__textContent {
   margin: 50px 10px;
@@ -320,10 +320,12 @@ img {
 }
 .es-mucoMini .es-intro__textContent p, #es-mucoMini .es-intro__textContent p {
   line-height: 1.1;
+  font-size: 20px;
 }
 .es-mucoMini .es-intro__types, #es-mucoMini .es-intro__types {
   width: 60%;
   padding: 20px 50px;
+  margin-top: 100px;
 }
 .es-mucoMini .es-intro__textTitle, #es-mucoMini .es-intro__textTitle {
   text-transform: uppercase;
@@ -373,6 +375,9 @@ img {
 .es-mucoMini .es-about__iconsSingle--short, #es-mucoMini .es-about__iconsSingle--short {
   min-height: 180px;
 }
+.es-mucoMini .es-about__iconsSingle--short p, #es-mucoMini .es-about__iconsSingle--short p {
+  margin-top: -10px;
+}
 .es-mucoMini .es-about__biggerImg, #es-mucoMini .es-about__biggerImg {
   width: 200px;
   min-height: 220px;
@@ -383,12 +388,13 @@ img {
   width: 100px;
   -webkit-animation: shake 2s infinite;
           animation: shake 2s infinite;
+  margin-bottom: 0;
 }
 .es-mucoMini .es-about__flavourSection, #es-mucoMini .es-about__flavourSection {
   background-image: url(/img/section_bg_short.png);
   background-repeat: no-repeat;
-  background-position: left top;
-  background-size: 35% 90%;
+  background-position: right top;
+  background-size: 20% 90%;
 }
 .es-mucoMini .es-about__productCtn, #es-mucoMini .es-about__productCtn {
   display: flex;
@@ -399,30 +405,38 @@ img {
 }
 .es-mucoMini .es-about__imgText, #es-mucoMini .es-about__imgText {
   margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .es-mucoMini .es-about__imgText img, #es-mucoMini .es-about__imgText img {
   max-width: 350px;
+  margin-bottom: 30px;
 }
 .es-mucoMini .es-about__imgProduct, #es-mucoMini .es-about__imgProduct {
   position: relative;
+  max-width: 300px;
 }
 .es-mucoMini .es-about__berries, #es-mucoMini .es-about__berries {
   position: absolute;
-  bottom: -8%;
-  left: 12%;
+  bottom: 2%;
+  left: 25%;
   -webkit-animation: es-pulse 2s infinite;
           animation: es-pulse 2s infinite;
   z-index: 10;
+  max-width: 220px;
 }
 .es-mucoMini .es-about__text, #es-mucoMini .es-about__text {
   margin-top: -40px;
-  margin-left: -300px;
+  margin-left: -180px;
   transform: rotate(-3deg);
   background-color: #00418d;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 10px 40px;
+  font-size: 16px;
   font-weight: 900;
   -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(9% 0, 100% 0%, 100% 100%, 0% 100%);
@@ -430,7 +444,8 @@ img {
 .es-mucoMini .es-about__text::before, #es-mucoMini .es-about__text::before {
   content: url(./img/red-triangleBtn.png);
   display: inline-block;
-  transform: rotate(-86deg);
+  transform: rotate(-83deg);
+  width: 30px;
 }
 .es-mucoMini .es-video, #es-mucoMini .es-video {
   margin: 0 auto;
