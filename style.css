@@ -307,7 +307,6 @@ img {
   font-weight: 900;
   font-family: "MuseoSans";
   font-size: 35px;
-  text-shadow: -1px 0 #00418d, 0 1px #00418d, 1px 0 #00418d, 0 -1px #00418d;
 }
 .es-mucoMini .es-intro__textImg, #es-mucoMini .es-intro__textImg {
   z-index: 10;
