@@ -299,6 +299,7 @@ img {
   margin-top: 50px;
 }
 .es-mucoMini .es-intro__text--red, #es-mucoMini .es-intro__text--red {
+  text-align: center;
   text-transform: uppercase;
   padding: 5px;
   transform: rotate(-3deg);
