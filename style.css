@@ -212,6 +212,7 @@ img {
   padding: 0;
   color: #fff;
   background-color: #004999;
+  font-display: auto;
 }
 .es-mucoMini .es-kv, #es-mucoMini .es-kv {
   background-image: url(./img/kv__bg.png);
