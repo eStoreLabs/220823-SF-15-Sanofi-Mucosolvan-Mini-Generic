@@ -672,6 +672,8 @@ img {
   }
   .es-mucoMini .es-kv__packshot img, #es-mucoMini .es-kv__packshot img {
     max-width: 200px;
+    -webkit-animation: none;
+            animation: none;
   }
   .es-mucoMini .es-intro, #es-mucoMini .es-intro {
     width: 100%;
